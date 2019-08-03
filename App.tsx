@@ -17,7 +17,7 @@ const AppContainer = createAppContainer(
   new RootNavigator({ lang: "en" }).getNavigator()
 );
 
-interface Props {}
+interface Props { }
 export default class App extends Component<Props> {
   render() {
     return <AppContainer />;

@@ -10,6 +10,10 @@ class ViewStylesClass {
   });
 
   mStyles = StyleSheet.create({
+    screenRoot: {
+      padding: 24
+    },
+
     card: {
       marginLeft: 0,
       marginRight: 0,

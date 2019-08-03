@@ -2,6 +2,7 @@ import { createStackNavigator, NavigationContainer } from "react-navigation";
 import LocalizedStrings from "localized-strings";
 import ScreenKeys from "../ScreenKeys";
 import HomeScreen from "./HomeScreen";
+import SSHPAServerConfigScreen from "./HostConfigScreens.tsx/SSHPAServerConfigScreen";
 
 interface RootNavigatorCtorParams {
   lang?: string;
@@ -26,6 +27,9 @@ class RootNavigator {
         navigationOptions: {
           title: this.mDefaultTitle[ScreenKeys.HOME_SCREEN]
         }
+      },
+      [ScreenKeys.PA_SSH_SERVER_CONFIG_SCREEN]: {
+        screen: SSHPAServerConfigScreen
       }
     });
   }
