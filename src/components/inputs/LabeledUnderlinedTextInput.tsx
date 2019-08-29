@@ -7,7 +7,7 @@ import {
   StyleSheet,
   Platform
 } from "react-native";
-import VSeparator from "../layouts/JXVSeparator";
+import VSeparator from "../layouts/VSeparator";
 import { Button } from "react-native-elements";
 import LocalizedStrings from "localized-strings";
 

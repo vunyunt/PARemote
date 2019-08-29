@@ -3,6 +3,8 @@ import LocalizedStrings from "localized-strings";
 import ScreenKeys from "../ScreenKeys";
 import HomeScreen from "./HomeScreen";
 import SSHPAServerConfigScreen from "./HostConfigScreens.tsx/SSHPAServerConfigScreen";
+import OpenSourceLicensesScreen from "./OpenSourceLicensesScreen";
+import LicenseDisplayScreen from "./LicenseDisplayScreen";
 
 interface RootNavigatorCtorParams {
   lang?: string;
@@ -30,6 +32,12 @@ class RootNavigator {
       },
       [ScreenKeys.PA_SSH_SERVER_CONFIG_SCREEN]: {
         screen: SSHPAServerConfigScreen
+      },
+      [ScreenKeys.OPEN_SOURCE_LICENSES_SCREEN]: {
+        screen: OpenSourceLicensesScreen
+      },
+      [ScreenKeys.LICENSE_DISPLAY_SCREEN]: {
+        screen: LicenseDisplayScreen
       }
     });
   }

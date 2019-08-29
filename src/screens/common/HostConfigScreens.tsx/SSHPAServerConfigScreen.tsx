@@ -9,7 +9,6 @@ import LabeledUnderlinedTextInput from "src/components/inputs/LabeledUnderlinedT
 import ViewStyles from "src/styles/ViewStyles";
 import { Button } from "react-native-elements";
 
-
 export interface ISSHPAServerConfigScreenNavParams {
   audioServerInfo?: IAudioServerInfo<ISSHPAServerConfig>;
   onSave?: (serverInfo: IAudioServerInfo<ISSHPAServerConfig>) => void;
@@ -104,16 +103,18 @@ export default class SSHPAServerConfigScreen extends Component<
         />
 
         <LabeledUnderlinedTextInput
+          autoCapitalize="none"
           label={this.mUIString.LABEL_HOST}
           value={this.state.host}
           onChangeText={val => {
             this.setState({
-              host: val
+              host: val.trim()
             });
           }}
         />
 
         <LabeledUnderlinedTextInput
+          autoCapitalize="none"
           label={this.mUIString.LABEL_USER}
           value={this.state.user}
           onChangeText={val => {

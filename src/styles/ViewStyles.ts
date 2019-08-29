@@ -14,17 +14,8 @@ class ViewStylesClass {
       padding: 24
     },
 
-    card: {
-      marginLeft: 0,
-      marginRight: 0,
-      borderRadius: 4,
-      shadowOffset: {
-        width: 0,
-        height: 2
-      },
-      shadowRadius: 2,
-      shadowColor: "black",
-      shadowOpacity: 0.5
+    hflex: {
+      flexDirection: "row"
     },
 
     normalPadding: {

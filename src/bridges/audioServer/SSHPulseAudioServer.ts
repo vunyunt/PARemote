@@ -1,7 +1,6 @@
 import lodash from "lodash";
 import AudioServer, { ISinkInputInfo } from "./IAudioServer";
 const SSH = require("react-native-ssh").default;
-// import SSH from "react-native-ssh";
 
 export interface ISSHPAServerConfig {
   user: string;
@@ -54,7 +53,9 @@ export default class SSHPulseAudioServer extends AudioServer<ISSHPAServerConfig>
       let cmdStr = cmd.join(" ");
       SSH.execute(this.mAudioServerInfo.config, cmdStr);
     },
-    200
+    200, {
+      trailing: true
+    }
   );
 
   async _sshPaGetSinkInputs() {
