@@ -12,7 +12,7 @@
     "@types/lodash": "^4.14.136",
     "@types/react-native-vector-icons": "^6.4.1",
     "localized-strings": "^0.2.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "16.8.6",
     "react-native": "0.60.4",
     "react-native-elements": "^1.1.0",
